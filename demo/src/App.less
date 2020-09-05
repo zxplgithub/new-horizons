@@ -1,0 +1,171 @@
+@color1890ff: #1890ff;
+@color40a9ff: #40a9ff;
+@colorffffff: #ffffff;
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.app {
+    .loginPage {
+        height: 100vh;
+        background: url("./loginBg.jpeg") no-repeat center center;
+        background-size: cover;
+
+        h3 {
+            color: @colorffffff;
+            font-size: 24px;
+        }
+
+        input,
+        button {
+            display: block;
+        }
+
+        img.logo {
+            height: 30vmin;
+            pointer-events: none;
+        }
+
+        .loginForm {
+            margin: 0 auto;
+            text-align: center;
+
+            input {
+                border-radius: 4px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                font-size: 18px;
+                background: @color1890ff;
+                color: @colorffffff;
+                background: @color1890ff;
+                border-color: @color1890ff;
+                border-radius: 4px;
+                margin: 0 auto;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+                box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+                padding: 4px 15px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background: @color40a9ff;
+                }
+            }
+        }
+
+        @media screen and (min-width:960px) {
+            .loginForm {
+                width: 550px;
+
+                input {
+                    width: 60%;
+                    margin: 0 auto 30px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+
+                button {
+                    width: 60%;
+                    height: 36px;
+                }
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width:960px) {
+            .loginForm {
+                width: 500px;
+
+                input {
+                    width: 50%;
+                    margin: 0 auto 20px;
+                    height: 36px;
+                    line-height: 36px;
+                }
+
+                button {
+                    width: 50%;
+                    height: 32px;
+                }
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 599px) {
+            .loginForm {
+                width: 60%;
+
+                h3 {
+                    font-size: 36px;
+                }
+
+                input {
+                    width: 100%;
+                    margin: 0 auto 28px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+
+                button {
+                    width: 100%;
+                    height: 36px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .loginForm {
+                width: 70%;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                input {
+                    width: 100%;
+                    margin: 0 auto 20px;
+                    height: 42px;
+                    line-height: 42px;
+                }
+
+                button {
+                    width: 100%;
+                    height: 38px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
