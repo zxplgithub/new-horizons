@@ -19,6 +19,7 @@ const Login = (props: LoginProps) => {
         <input type="text" placeholder="Please enter your username" />
         <input type="password" placeholder="Please enter your password" />
         <button onClick={handleLogin}>Login</button>
+        <p>tips: click button go to test 1</p>
       </div>
     </div>
   );
